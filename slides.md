@@ -78,6 +78,53 @@ $ mycli TOPIC SUBTOPIC
 
 ---
 
+# Global flags
+
+![globalflags](./globalflags.png)
+
+---
+
+# did-you-mean for flags
+
+```
+$ heroku config:set FOO=bar --ap=myapp
+Did you mean "--app"?
+```
+
+---
+
+# Config binding
+
+* `echo '{"foo": "bar"}' > ~/.config/mycli.json`
+* `export MYCLI_CONFIG_FOO=bar`
+* `mycli --foo=bar`
+
+![configbinding](./configbinding.png)
+
+---
+
+# Zero-config oclif
+
+```sh-session
+$ cat <<EOF > mycommand.ts
+import {Command} from '@oclif/command'
+
+class MyCommand extends Command {
+  async run() {
+    this.log('single file!')
+  }
+}
+EOF
+$ oclif run
+single file!
+$ oclif build
+...
+$ oclif publish
+...
+```
+
+---
+
 # Remove `this.parse()`
 
 ```typescript
@@ -164,5 +211,48 @@ class: middle
 * ESLint
 * pnpm
 * config
-* jest
 * windows builds
+* merge with @oclif/dev
+
+---
+
+# @oclif/plugin-help
+
+* pluggability
+* docusaurus site generator
+* man page support
+
+![help](./help.png)
+
+---
+
+# Testing
+
+* should fancy-test be merged?
+* could testing be rethought?
+* jest?
+
+![testing](./testing.png)
+
+---
+
+# Analytics/error handling service
+
+* React front-end
+* Back-end to store user exceptions and usage statistics
+* Possibly also with badge utility to track GitHub repo or npm package views
+
+---
+
+# Dynamic commands
+
+* Hard Mode.
+* Would work against current dispatching logic
+
+---
+
+class: center, middle
+
+# oclifd
+
+![science](./science.gif)
