@@ -35,14 +35,16 @@ class: center, middle
 * Using TypeScript to build their CLI
 * The generator
 * Plugin support
-* Scalability
 * Autoupdates
 * Autocomplete
+* Scalability
 
 ---
 
 class: center, middle
 .fit[![pikachu](./pikachu.gif)]
+
+#### I'm moving on from Node/CLI development, but here are some of the things I wasn't able to get around to completing
 
 ---
 
@@ -212,7 +214,6 @@ class: middle
 * pnpm
 * config
 * windows builds
-* merge with @oclif/dev
 
 ---
 
