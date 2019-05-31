@@ -6,12 +6,6 @@ class: center, middle
 
 class: center, middle
 
-## oclif has quickly become the go-to tool for building CLIs with Node.js
-
----
-
-class: center, middle
-
 # Launched February 2018
 
 #### Estimated \>1m oclif-based CLI downloads/week
